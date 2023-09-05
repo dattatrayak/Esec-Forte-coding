@@ -1,3 +1,4 @@
+<?php 
 ///Q2: Custom Parser:
 function parse($inputString) {
     $output = [];
@@ -46,3 +47,4 @@ function parse($inputString) {
 $inputString = "ppppsmoso";
 $result = parse($inputString);
 print_r($result);
+?>
