@@ -1,67 +1,97 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Please take up the below assessment and share the results on the same email here.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+ 
 
-## About Laravel
+----------------------------------------------------------------------
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+General Rules:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1: For bonus point avoid using in-built function.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+2: Preferred lang is PHP/JS
 
-## Learning Laravel
+3: Plz provide full file of the code which can be executed to check the output.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+4: Any assumptions shall be clearly highlighted.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+ 
 
-## Laravel Sponsors
+ 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Q1: Convert String to Camel Case:
 
-### Premium Partners
+ 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
+Write Function which converts input String into camel casing and use delimiter also as per input. Capitalize 1st word only if original word was capital. Following words will always be capitalized.
 
-## Contributing
+ 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Examples:
 
-## Code of Conduct
+ 
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Function: camelCase("input", "delimiter")
 
-## Security Vulnerabilities
+ 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+"the-test-case" gets converted to "theTestCase"
 
-## License
+"The_First_Word_Capital" gets converted to "TheFirstWordCapital"
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ 
 
+Q2: Custom Parser:
+
+ 
+
+Write a function which will parse input string as per below logic & return the output as array.
+
+ 
+
+Consider initial value as 0
+
+ 
+
+p : Adds up value by 1
+
+m : reduces value by 1
+
+s : square - like if value is 4 - it will become 16
+
+o : saves the output in array to be returned.
+
+ 
+
+Invalid char shall be skipped.
+
+ 
+
+Ex:
+
+parse("ppppsmoso") => [ 15, 225 ]
+
+ 
+
+ 
+
+Q3: Find the missing alphabet:
+
+ 
+
+write a function to find extra characters from the input string as per below logic, and return output as integer.
+
+ 
+
+Legal characters are only a-n, consider case.
+
+Any character beyond this range shall be counted as extra.
+
+ 
+
+Ex:
+
+aaabdbnhaikjjm --> 0
+
+abaxbdbbyyhwawiwjjjwem --> 8
+
+ 
